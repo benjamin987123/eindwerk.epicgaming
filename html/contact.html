@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js-map/mapscript.js" defer></script>
+</head>
+<body>
+    <header id="header_img_bg">     
+        <h2>Epic gaming</h2>
+        <nav>
+            <ul class="navList">
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="klanten.html">klanten</a></li>
+                <li><input type="text" placeholder="zoeken" class="placeholder"></li>
+            </ul>
+        </nav>     
+    </header>
+    <main id="bg_img_contact">
+        <h1>Contacteer ons</h1> <br>          
+        <form action="#" method="GET" id="contact_form"> 
+
+            <label for="Voornaam" class="contact_label">Voornaam</label> <br>
+            <input type="text" name="Voornaam" placeholder="Voornaam" class="placeholder"> <br> <br>
+
+            <label for="familiename" class="contact_label">Achternaam</label> <br>
+            <input type="text" name="Achternaam" placeholder="Achternaam" class="placeholder"> <br> <br>
+
+            <label for="email"class="contact_label">e-mail</label> <br>
+            <input type="email" name="email" placeholder="e-mail@.com" class="placeholder"> <br> <br>  
+
+            <label for="subject" class="contact_label">Onderwerp</label> <br>
+            <input type="text" name="subject" placeholder="Onderwerp" class="placeholder"> <br> <br>                       
+            
+            <label for="maessage" class="contact_label">Bericht</label>
+            <fieldset class="contact_fieldset">                                
+                <textarea name="Bericht" id="" cols="35" rows="10"></textarea>                 
+            </fieldset> <br>
+
+            <input type="submit" value="upload" class="contact_submit_button">
+            <input type="reset" value="reset" class="contact_submit_button">
+        </form> <br> <br>
+        <img src="assets/image/store front.jpg" alt="store" title="store" id="contact_img_storefront">
+        <div id="map"></div>             
+    </main>
+    <footer>
+        <p> &copy; 2023 Epic Gaming - All rights reserved</p>
+        <a href="#"><img src="assets/image/facebook.png" alt="facebook" title="facebook" class="social_icons"></a>
+        <a href="#"><img src="assets/image/instagram.png" alt="instagram" title="twitter" class="social_icons"></a>
+        <a href="#"><img src="assets/image/twitter.png" alt="twitter" title="twitter" class="social_icons"></a>
+    </footer>
+</body>
+</html>
